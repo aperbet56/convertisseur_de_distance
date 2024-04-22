@@ -113,11 +113,11 @@ input, select, .btn {
     gap: 27px;
 }
 
-#input__category {
+#input__category, .input__box__converter {
    color: #3131df
 }
 
-#result__category {
+#result__category, .result__category__box{
     color: #14b114;
 }
 
