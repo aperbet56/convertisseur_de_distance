@@ -11,7 +11,7 @@ Lien vers le projet : https://aperbet56.github.io/convertisseur_de_distance/
 ## Développez avec
 
 - Utilisation des balises sémantiques HTML5
-- CSS
+- CSS3
 - Flexbox
 - Animations CSS
 - Page web responsive
