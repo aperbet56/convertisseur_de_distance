@@ -18,10 +18,11 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
-    background-color: rgba(238, 231, 231, 0.569);
+    background-color: #f8f5f2;
 }
 
-header, footer {
+header,
+footer {
     padding: 20px 15px;
 }
 
@@ -41,6 +42,7 @@ header .details {
 
 .details .main__title {
     font-weight: 700;
+    font-style: italic;
 }
 
 .main__content {
@@ -52,10 +54,10 @@ header .details {
 
 .container {
     padding: 25px;
-    background-color: #ffffff;
-    border: 2px solid #4d5964;
+    background-color: #fffffe;
+    border: 2px solid #232323;
     border-radius: 8px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
     text-align: center;
     margin: 15px;
 }
@@ -85,19 +87,32 @@ header .details {
 }
 
 input {
-    background-color: #fafafa;
+    background-color: #f8f5f2;
     font-size: 22px;
     text-align: center;
     padding: 15px 0;
     border-radius: 6px;
     margin-bottom: 8px;
+    border: 2px solid transparent;
+    appearance: none;
+    -moz-appearance: textfield;
+    /* Suppression des flèches de l'input number sur Mozilla */
+    transition: border 0.3s ease-in-out;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input:focus {
-    border: 2px solid #000000;
+    border: 2px solid #232323;
 }
 
-input, select, .btn {
+input,
+select,
+.btn {
     font-family: "Roboto", sans-serif;
 }
 
@@ -105,7 +120,8 @@ input, select, .btn {
     pointer-events: none;
 }
 
-#input__category, #result__category {
+#input__category,
+#result__category {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -113,12 +129,14 @@ input, select, .btn {
     gap: 27px;
 }
 
-#input__category, .input__box__converter {
-   color: #3131df
+#input__category,
+.input__box__converter {
+    color: #078080;
 }
 
-#result__category, .result__category__box{
-    color: #14b114;
+#result__category,
+.result__category__box {
+    color: #f45d48;
 }
 
 select {
@@ -126,7 +144,7 @@ select {
     font-size: 20px;
     font-weight: 600;
     padding: 10px;
-    background-color: #f7f7f7;
+    background-color: #f8f5f2;
     border-radius: 3px;
 }
 
@@ -139,14 +157,15 @@ select {
     cursor: pointer;
     margin-top: 30px;
     margin-bottom: 20px;
-    background-color: rgba(238, 231, 231, 0.569);
-    color: #4d5964;
-    transition: background-color 0.3s ease-in-out
-                color 0.3s ease-in-out;
+    border: 2px solid #232323;
+    background-color: #fffffe;
+    color: #232323;
+    transition: background-color 0.3s ease-in-out,
+        color 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background-color: #000000;
+    background-color: #232323;
     color: #ffffff;
 }
 
@@ -162,13 +181,14 @@ footer span {
     font-weight: 500;
 }
 
-/**** Responsive design ****/ 
+/**** Responsive design ****/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .container {
         width: 95%;
         padding: 15px;
     }
+
     .converter__article {
         flex-direction: column;
         width: 100%;
@@ -179,7 +199,8 @@ footer span {
         margin-bottom: 15px;
     }
 
-    .input__field.converter, .input__field.result {
+    .input__field.converter,
+    .input__field.result {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
