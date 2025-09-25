@@ -1,14 +1,18 @@
 ## MON CONVERTISSEUR DE DISTANCE
 
+![Design preview for the projet](./img/preview.png)
+
 ## Le challenge
 
-Création d'un convertisseur de distance. Ce convertisseur permet à l'Utilisateur de convertir simultanément une distance (donnée en mètre, kilomètre ou centimètre) en plusieurs unités courantes telles que le mètre (unité officielle du système international d'unité), le pied, le pouce, le kilomètre, le mille...
+Création d'un convertisseur de distance en HTML5, CSS3 et JavaScript.
+
+Ce convertisseur permet à l'Utilisateur de convertir simultanément une distance (donnée en mètre, kilomètre ou centimètre) en plusieurs unités courantes telles que le mètre (unité officielle du système international d'unité), le pied, le pouce, le kilomètre, le mille...
 
 ## Démonstration
 
 Lien vers le projet : https://aperbet56.github.io/convertisseur_de_distance/
 
-## Développez avec
+## Projet développé avec
 
 - Utilisation des balises sémantiques HTML5
 - CSS3
